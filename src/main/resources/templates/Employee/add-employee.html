@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/employee/add-employee.css" type="text/css">
+    <title>Add Employee</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Add Employee</h1>
+        <div class="content">
+            <form th:action="@{/employee/add}" method="post" enctype="multipart/form-data" class="form-container">
+                <div class="left-column">
+                    <label for="">ID</label>
+                    <div class="custome-input">
+                        <input type="number" name="id" placeholder="Enter ID">
+                    </div>
+                    <label for="">Full name:</label>
+                    <div class="custome-input">
+                        <input type="text" name="fullName" placeholder="Enter name">
+                    </div>
+                    <label for="">Phone:</label>
+                    <div class="custome-input">
+                        <input type="text" name="phoneNumber" placeholder="Enter phone number">
+                    </div>
+                    <label for="">Address</label>
+                    <div class="custome-input">
+                        <input type="text" name="address" placeholder="Enter address">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <label for="">Gender</label>
+                    <div class="custome-input">
+                        <input type="text" name="sex" placeholder="Enter gender">
+                    </div>
+                    <label for="">ID Card</label>
+                    <div class="custome-input">
+                        <input type="text" name="IDCard" placeholder="Enter ID card">
+                    </div>
+                    <label for="">Email:</label>
+                    <div class="custome-input">
+                        <input type="text" name="email" placeholder="Enter email">
+                    </div>
+                    <label for="">Password</label>
+                    <div class="custome-input">
+                        <input type="password" name="password" placeholder="Enter password">
+                    </div>
+                    <label for="">Photo</label>
+                    <div class="file">
+                        <input type="file" name="avatar" accept="image/*">
+                    </div>
+                </div>
+                
+            </form>
+            <button class="login" type="submit">Add</button>
+        </div>
+    </div>
+</body>
+
+</html>
